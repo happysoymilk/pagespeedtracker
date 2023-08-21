@@ -61,14 +61,8 @@ def hello_pubsub(cloud_event):
     # Print out the data from Pub/Sub, to prove that it worked
     today = date.today()
     today = today.strftime("%d/%m/%Y")
-    API_KEY = "AIzaSyArwZK1fEEiUbe9gUILbC0XKZ3yspv0QG8"
-    links = ["https://www.printerpix.co.uk/cpg/custom-blanket-mink-touch/","https://www.printerpix.co.uk/personalised-gifts-for-boyfriend-photo-blanket/","https://www.printerpix.co.uk/captioned-photo-book/",
-        "https://www.printerpix.co.uk/cpg/custom-photo-book-hardcover/","https://www.printerpix.co.uk/photo-gifts-for-grandparents-photo-blanket/","https://www.printerpix.co.uk/mink-personalised-blanket/",
-        "https://www.printerpix.co.uk/cpg/custom-collage-canvas/","https://www.printerpix.co.uk/gifts-for-men-photo-blanket/","https://www.printerpix.co.uk/family-gifts-photo-blanket/",
-        "https://www.printerpix.co.uk/cpg/photo-stone-slate/","https://www.printerpix.co.uk/cpg/photo-collage-canvas/","https://www.printerpix.co.uk/original-calendar-family/",
-        "https://www.printerpix.co.uk/pocket-photobook-photo-cover/","https://www.printerpix.co.uk/printerpix-personalised-jigsaw-puzzle-mothers-day-photo-gifts/","https://www.printerpix.co.uk/printerpix-mother-and-son-photo-canvas-all-layout-sizes/",
-        "https://www.printerpix.co.uk/personalised-photo-cushion/","https://www.printerpix.co.uk/printerpix-mother-and-son-photo-photobook/","https://www.printerpix.co.uk/cpg/personalised-birthday-book-your-photos/",
-        "https://www.printerpix.co.uk/photo-tiles-prints/","https://www.printerpix.co.uk/big-and-large-canvas/"
+    API_KEY = "*************"
+    links = ["************"
         ]
     message = "<h1> Daily report - Mobile</h1>"
     bad_count_mobile = 0
@@ -97,10 +91,10 @@ def hello_pubsub(cloud_event):
 
     subject = "Page Speed Report " + today
     msg = MIMEMultipart()
-    password = 'Kah93613'
-    msg['From'] = "shijun.ma@printerpix.co.uk"
-    recipients = "shijun.ma@printerpix.co.uk,daniel.vasilescu@printerpix.co.uk,printerpix@360-om.co.uk"
-    # msg['To'] = "shijun.ma@printerpix.co.uk"
+    password = '*******'
+    msg['From'] = "********"
+    recipients = "******,*******,*********"
+    # msg['To'] = "*********"
     
     #Here we set the message. If we send an HTML we can include tags
     msg['Subject'] = subject
@@ -115,7 +109,7 @@ def hello_pubsub(cloud_event):
     server.starttls()
     
     #Login Credentials for sending the mail
-    server.login('shijun.ma@printerpix.co.uk', password)
+    server.login('**********', password)
     
     #  recipients.split(',')
     # send the message via the server.
